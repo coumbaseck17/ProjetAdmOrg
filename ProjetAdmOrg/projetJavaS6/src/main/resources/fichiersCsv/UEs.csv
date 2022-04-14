@@ -1,0 +1,44 @@
+Conception objet;4460;6;MIAGE;6621,4588
+Economie;1165;3;MIAGE;4588,4898
+Bases de données;1348;6;MIAGE;
+Bases de données2;4190;6;MIAGE;1348
+SAS;4161;6;MIAGE;1348
+Developpement web;5965;6;MIAGE;6621,4460
+Gestion financière;6474;3;MIAGE;1165,4898
+Génie logiciel;5167;6;Informatique;6621,4588
+Sécurité;8076;6;Informatique;5167,8917
+Réseau;8917;6;Informatique;6621
+Intelligence artificielle;7017;6;Informatique;5167,8076
+Calculabilité;9153;6;Informatique;4588
+Chimie Organique;5318;6;Chimie;2673
+Travaux pratiques;1176;6;Chimie;5318,3345
+Méthodes d'analyse;3345;6;Chimie;
+Microbiologie;2673;6;Chimie;
+Chimie des materieux;6475;3;Chimie;2673,3079
+Polymères;3079;3;Chimie;
+Optique;4458;6;Physique;4588
+Electronique;3113;6;Physique;4588
+Dynamique;1251;3;Physique;4588
+Mathématique2;6113;3;Physique;4588
+Relativité;9527;6;Physique;4588,6113
+Nanophysique;9836;6;Physique;4588,6113,1251
+Algèbre;5274;3;Mathématique;
+Probabilité;8593;3;Mathématique;4588
+Algorithmique;1744;6;Mathématique;6621,5274
+Statistique;1525;6;Mathématique;4588,8593
+Topologie;6658;3;Mathématique;4588,1525
+Analyse complexe;5825;3;Mathématique;4588,1525
+Devenir Étudiant;7662;6;null;
+Anglais;5263;6;null;
+Mathématique;4588;3;null;
+Fondements de programmation;6621;3;null;
+Espagnol;5504;6;null;
+Gestion;4898;6;null;
+Reseau2;1;1;8917;
+Reseau3;2;10;1;
+Reseau4;3;10;2;
+Espagnol;4;20;null
+Allemand;5;20;null
+Japonais;6;10;null
+Chinois;7;10;null
+Italien;8;10;null

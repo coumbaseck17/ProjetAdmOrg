@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorid" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.miage.toulouse.projetjavas6.ChoixRepertoireCSVController">
+   <children>
+      <VBox prefHeight="500.0" prefWidth="1000.0" spacing="50.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom app launcher" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Selectionner le répertoire où se trouvent vos fichiers csv : (Si vous n'en sélectionnez pas, des fichiers par défaut seront crée dans le répertoire : applicationJavaGroupe6)" textAlignment="CENTER" wrappingWidth="600.0" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <StackPane prefHeight="27.0" prefWidth="26.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Circle fx:id="afficherExplications" fill="#c9c9c9" onMouseEntered="#afficherExplicationCSV" onMouseExited="#cacherExplicationCSV" radius="13.0" stroke="#838383" strokeType="INSIDE">
+                           <cursor>
+                              <Cursor fx:constant="CROSSHAIR" />
+                           </cursor></Circle>
+                        <Text mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="?" textAlignment="CENTER" wrappingWidth="23.4306640625">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="CROSSHAIR" />
+                           </cursor>
+                        </Text>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="cheminFichier" prefHeight="36.0" text="repertoireParDefaut">
+                     <font>
+                        <Font size="15.0" />
+                     </font></TextField>
+                  <Button mnemonicParsing="false" onAction="#choisirRepertoire" prefHeight="36.0" prefWidth="117.0" style="-fx-background-color: #f9cb9c;" text="Parcourir..." HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#quitter" prefHeight="36.0" prefWidth="80.0" style="-fx-background-color: #f9cb9c;" text="Annuler">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button mnemonicParsing="false" onAction="#switchToAccueil" prefHeight="36.0" prefWidth="86.0" style="-fx-background-color: #f9cb9c;" text="Lancer">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <TextArea fx:id="textExplicatifFichiers" accessibleRole="TEXT" editable="false" prefHeight="465.0" prefWidth="700.0" text="Vos fichiers csv doivent etre :&#10;&#10;1er fichier :&#10;Mentions.csv&#10;nomMention; nomParcours, nomParcours...; codeUe, codeUe...&#10;&#10;2eme fichier :&#10;UEs.csv&#10;nomUe; codeId; credits; nomMention (ou &quot;null&quot; si ouverture); codeUePrerequise, codeUePrerequise, ... (ou &quot;null&quot;)&#10;&#10;3eme fichier :&#10;Etudiants.csv&#10;numEtu preno;nom;credits;nomP;annee;semestre: &quot;PAIR&quot;,&quot;IMPAIR&quot;;cdeUeValide...;cdeUeEchoue..;cdeUeEnCours&#10;&#10;4eme fichier :&#10;Referents.csv&#10;nomMention; nom; prenom; numeroId; numeroEtu, numeroEtu...&#10;&#10;5eme fichier :&#10;Directeurs.csv&#10;nomMention; nom; prenom" visible="false" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
